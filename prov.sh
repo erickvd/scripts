@@ -10,8 +10,6 @@ if [ "$(id -u)" != "0" ]; then
   exit 1
 fi
 
-echo ${SEMAPHORE_PWD}
-echo ${SEM_SSH_KEY}
 # Créer un compte pour semaphore
 echo "Création de l'utilisateur semaphore"
 if ( ! id semaphore &> /dev/null )
