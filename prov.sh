@@ -6,7 +6,7 @@ echo
 if [ "$(id -u)" != "0" ]; then
   echo "Error: Ce script doit être exécuté avec sudo."
   echo "Veuillez utiliser la commande suivante : "
-  echo "source <(wget -O - -q https://ansible.lan.ekla-danse.be/scripts/.env) && wget -q -O - https://ansible.lan.ekla-danse.be/scripts/prov.sh | sudo bash"
+  echo "source <(wget -O - -q https://ansible.lan.ekla-danse.be/scripts/.env) && wget -q -O - https://ansible.lan.ekla-danse.be/scripts/prov.sh | sudo -E bash"
   exit 1
 fi
 
